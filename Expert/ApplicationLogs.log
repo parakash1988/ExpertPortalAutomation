@@ -1,0 +1,53 @@
+2022-04-06 17:19:35 INFO  ********* Starting Test Execution. ***********
+2022-04-06 17:19:37 INFO  ****************************
+2022-04-06 17:19:37 INFO  Scenario : ExpertPortal Dashboard
+2022-04-06 17:19:37 INFO  Scenario start time: 2022-04-06 17:19:37
+2022-04-06 17:19:37 INFO  Launching web application URL: https://expert.parodev.io/dashboards
+2022-04-06 17:19:51 INFO  Writing 'annonbill@gmail.com' into web-element: [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //input[@type='email']]
+2022-04-06 17:19:51 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //input[@type='email']]
+2022-04-06 17:19:53 INFO  Writing 'Password1!' into web-element: [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //input[@name='password']]
+2022-04-06 17:19:53 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //input[@name='password']]
+2022-04-06 17:19:53 INFO  Clicking on web-element: [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //button[@name='submit']]
+2022-04-06 17:19:53 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //button[@name='submit']]
+2022-04-06 17:19:54 INFO  Waiting for the element to be clickable : [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //button[@name='submit']]
+2022-04-06 17:19:54 INFO  Clicked on web-element: [[ChromeDriver: chrome on WINDOWS (5f6cb4d98b337d3a024122bb9035023c)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:12 INFO  ****************************
+2022-04-06 17:20:12 INFO  Scenario : ChecktheLinkandlabelonExpertDashboard
+2022-04-06 17:20:12 INFO  Scenario start time: 2022-04-06 17:20:12
+2022-04-06 17:20:12 INFO  Launching web application URL: https://expert.parodev.io/dashboards
+2022-04-06 17:20:18 INFO  Writing 'annonbill@gmail.com' into web-element: [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //input[@type='email']]
+2022-04-06 17:20:18 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //input[@type='email']]
+2022-04-06 17:20:20 INFO  Writing 'Password1!' into web-element: [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //input[@name='password']]
+2022-04-06 17:20:20 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //input[@name='password']]
+2022-04-06 17:20:21 INFO  Clicking on web-element: [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:21 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:21 INFO  Waiting for the element to be clickable : [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:21 INFO  Clicked on web-element: [[ChromeDriver: chrome on WINDOWS (dd3ce58273d01f64a77ad972bdf219ac)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:43 INFO  Finding the element by By.xpath: //span[text()='Monthly Hours Logged']
+2022-04-06 17:20:43 INFO  Finding the element by By.xpath: (//div[@class='pt-4 px-3 text-center'])[1]
+2022-04-06 17:20:45 INFO  ****************************
+2022-04-06 17:20:45 INFO  Scenario : ValidExpertUserLogin
+2022-04-06 17:20:45 INFO  Scenario start time: 2022-04-06 17:20:45
+2022-04-06 17:20:45 INFO  Launching web application URL: https://expert.parodev.io/dashboards
+2022-04-06 17:20:50 INFO  Writing 'annonbill@gmail.com' into web-element: [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //input[@type='email']]
+2022-04-06 17:20:50 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //input[@type='email']]
+2022-04-06 17:20:52 INFO  Writing 'Password1!' into web-element: [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //input[@name='password']]
+2022-04-06 17:20:52 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //input[@name='password']]
+2022-04-06 17:20:53 INFO  Clicking on web-element: [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:53 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:53 INFO  Waiting for the element to be clickable : [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //button[@name='submit']]
+2022-04-06 17:20:53 INFO  Clicked on web-element: [[ChromeDriver: chrome on WINDOWS (97c065cd3ada35729cfd6077c0bc91f1)] -> xpath: //button[@name='submit']]
+2022-04-06 17:21:08 INFO  Finding the element by By.xpath: (//span[@class='MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock'])[26]
+2022-04-06 17:21:09 INFO  ****************************
+2022-04-06 17:21:09 INFO  Scenario : InvalidExpertUserLogin
+2022-04-06 17:21:09 INFO  Scenario start time: 2022-04-06 17:21:09
+2022-04-06 17:21:09 INFO  Launching web application URL: https://expert.parodev.io/dashboards
+2022-04-06 17:21:13 INFO  Writing 'annonbill@gmail.com' into web-element: [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //input[@type='email']]
+2022-04-06 17:21:13 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //input[@type='email']]
+2022-04-06 17:21:15 INFO  Writing 'Password1' into web-element: [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //input[@name='password']]
+2022-04-06 17:21:15 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //input[@name='password']]
+2022-04-06 17:21:16 INFO  Clicking on web-element: [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //button[@name='submit']]
+2022-04-06 17:21:16 INFO  Waiting for the element to be visible : [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //button[@name='submit']]
+2022-04-06 17:21:16 INFO  Waiting for the element to be clickable : [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //button[@name='submit']]
+2022-04-06 17:21:16 INFO  Clicked on web-element: [[ChromeDriver: chrome on WINDOWS (13d2e084abfeaf5539f0e2df8e0f2984)] -> xpath: //button[@name='submit']]
+2022-04-06 17:21:16 INFO  Finding the element by By.xpath: //span[text()='Wrong email or password.']
