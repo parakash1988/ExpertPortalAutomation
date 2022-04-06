@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-
 import com.Expert.Helper.PropertyHelper;
 import com.Expert.Util.Constants;
 import com.Expert.Util.CustomFormatter;
