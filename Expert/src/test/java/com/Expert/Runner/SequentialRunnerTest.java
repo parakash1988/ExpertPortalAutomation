@@ -4,7 +4,6 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.junit.BeforeClass;
@@ -13,7 +12,6 @@ import com.Expert.Helper.PropertyHelper;
 import com.Expert.Util.Constants;
 import com.Expert.Util.CustomFormatter;
 import com.Expert.Util.Variables;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 

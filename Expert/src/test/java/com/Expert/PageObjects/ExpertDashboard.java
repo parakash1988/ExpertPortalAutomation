@@ -36,20 +36,14 @@ public class ExpertDashboard extends BasePage {
 
 	}
 
-//	@FindBy(xpath= "(//span[text()='Dashboard'])[2]")
-//
-//	private WebElement dashboard;
-	
 	public void clickOnDashboard(){
-		ThreadSleep(1000);	
-		
+		ThreadSleep(200);	
 		WebElement dashboard = webElementHelper.getElement(By.xpath("(//span[text()='Dashboard'])[2]"));
 		Actions action = new Actions(driver);
 		ThreadSleep(200);
 		action.moveToElement(dashboard);
         action.click(dashboard);
-       // ThreadSleep(1500);
-  
+        
 	}
 	
 	
@@ -83,9 +77,6 @@ public class ExpertDashboard extends BasePage {
 	
 	}
 
-//	@FindBy(xpath="//span[text()='Monthly Hours Logged']")
-//	private WebElement checkMonthlyHourslabel;
-	
 	public void checkMonthlyHourslabel(){
 		
 		WebElement MonthlyHourslabel =webElementHelper.getElement(By.xpath("//span[text()='Monthly Hours Logged']"));
@@ -96,10 +87,6 @@ public class ExpertDashboard extends BasePage {
 		Assert.assertEquals(actualMessage, expectedMessage);
 		
 	}
-	
-//	@FindBy(xpath="text-lg md:text-2xl font-bold")
-//	private WebElement clecklogtime;
-
 	public void checklogtime(){
 	WebElement logtime =webElementHelper.getElement(By.xpath("(//div[@class='pt-4 px-3 text-center'])[1]"));
 	String actuallogtime =logtime.getText();
