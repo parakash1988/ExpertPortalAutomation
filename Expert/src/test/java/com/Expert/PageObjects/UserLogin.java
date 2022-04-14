@@ -38,7 +38,7 @@ public class UserLogin extends BasePage {
 
 	}
 
-	@FindBy(xpath= "//input[@type='email']")
+	@FindBy(xpath= "//input[@name='username']")
 
 	private WebElement emailID;
 	
@@ -57,7 +57,7 @@ public class UserLogin extends BasePage {
 	
 	}
 	
-	@FindBy(xpath= "//button[@name='submit']")
+	@FindBy(xpath= "//button[@type='submit']")
 
 	private WebElement submit;
 	
@@ -79,11 +79,11 @@ public class UserLogin extends BasePage {
 	}
 		
 	public void userVerifiedValidationMessage(){
-		WebElement message =webElementHelper.getElement(By.xpath("//span[text()='Wrong email or password.']"));
+		WebElement message =webElementHelper.getElement(By.xpath("//*[@id='error-element-password']"));
 		ThreadSleep(200);
 		String actualMessage =message.getText();
 		System.out.println("Actual Message:"  +actualMessage);
-		String expectedMessage = "WRONG EMAIL OR PASSWORD."; 
+		String expectedMessage = "Wrong email or password"; 
 		Assert.assertEquals(actualMessage, expectedMessage);
 	}
 	

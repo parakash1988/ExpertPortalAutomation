@@ -97,6 +97,16 @@ public class ExpertDashboard extends BasePage {
     	 driver.quit();
      }
 
-	
+     public void checkAvailableTime(){
+    		WebElement AvailableTime =webElementHelper.getElement(By.xpath("(//div[@class='pt-4 px-3 text-center'])[1]"));
+    		String actualAvailableltime =AvailableTime.getText();
+    		System.out.println("Actual Message:"  +actualAvailableltime);
+    		}
+    	   
+     public void checkLogTimeLink(){
+ 		WebElement checkLogTime =webElementHelper.getElement(By.xpath("//*[@id='log-time-link']"));
+ 		String checkLogTimeLink =checkLogTime.getText();
+ 		System.out.println("Actual Message:"  +checkLogTimeLink);
+ 		}
      
 }
