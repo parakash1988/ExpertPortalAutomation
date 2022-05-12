@@ -78,52 +78,57 @@ private ExpertPortalPage expertloginPage;
 
 	@Given("^check Available time$")
 	public void checkAvailabletime(){
-	   
+		expertportaldashboard.checkAvailableTime();
 	}
 
 	@Given("^check logtime link$")
 	public void checklogtimelink(){
-	   
+		expertportaldashboard.checkLogTimeLink();
 	}
 
 	@Given("^check update availability$")
 	public void checkupdateavailability(){
-	   
+		expertportaldashboard.checkUpdateavailability();
 	}
 
 	@Given("^check winrate label$")
 	public void checkwinratelabel(){
-	  
+		expertportaldashboard.checkWinRate();
 	}
 
 	@Given("^check Earning Realized$")
 	public void checkEarningRealized(){
-
+		expertportaldashboard.checkEarningRealized();
 	}
 
 	@Given("^check Suggested Hourly Rate$")
 	public void checkSuggestedHourlyRate(){
-	   
+		expertportaldashboard.checkSuggestedHourlyRate();
 	}
 
 	@Given("^click on search for opportunites$")
 	public void clickonsearchforopportunites(){
-	   
+		expertportaldashboard.clickOnseachopportunities();
+		
 	}
 
 	@Given("^click on submit button$")
 	public void clickonsubmitbutton(){
-	  
+		expertportaldashboard.clickOnsubmit();
 	}
-
-	@Given("^check Top (\\d+) Opportunities$")
-	public void checkTopOpportunities(int arg1){
-	    
-	}
-
 	@Given("^click on view all opportunites$")
 	public void clickonviewallopportunites(){
-	   
+		expertportaldashboard.clickOnViewAllOpportunities();
+	}
+
+	@Given("^check Most Recent Opportunities$")
+	public void checkMostRecentOpportunities(){
+		expertportaldashboard.clickOnMostReceint();
+	    
+	}
+	@Given("^check Most Qualified Percentage Opportunities$")
+	public void checkMostQualifiedOpportunities(){
+		expertportaldashboard.clickOnQualified();
 	}
 
 	@Given("^Select Earning dropdown value \"([^\"]*)\"$")

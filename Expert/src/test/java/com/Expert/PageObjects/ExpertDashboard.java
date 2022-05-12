@@ -109,4 +109,68 @@ public class ExpertDashboard extends BasePage {
  		System.out.println("Actual Message:"  +checkLogTimeLink);
  		}
      
-}
+     public void checkUpdateavailability(){
+  		WebElement checkUpdateavailability =webElementHelper.getElement(By.xpath("//*[text()='Update availability']"));
+  		String checkLogTimeLink =checkUpdateavailability.getText();
+  		System.out.println("Actual Message:"  +checkLogTimeLink);
+  		}
+     
+     public void checkWinRate(){
+   		WebElement checkWinRate =webElementHelper.getElement(By.xpath("//*[text()='Win Rate']"));
+   		String checkWinRateLable =checkWinRate.getText();
+   		System.out.println("Actual Message:"  +checkWinRateLable);
+   		}
+     public void checkEarningRealized(){
+    		WebElement checkEarningRealized =webElementHelper.getElement(By.xpath("//span[text()='Earnings Realized']"));
+    		String checkEarningRealizedlabel =checkEarningRealized.getText();
+    		System.out.println("Actual Message:"  +checkEarningRealizedlabel);
+    		}
+     public void checkSuggestedHourlyRate(){
+ 		WebElement checkSuggestedHourlyRate =webElementHelper.getElement(By.xpath("//span[text()='Suggested Hourly Rate']"));
+ 		String checkSuggestedHourlyRatelabel =checkSuggestedHourlyRate.getText();
+ 		System.out.println("Actual Message:"  +checkSuggestedHourlyRatelabel);
+ 		}
+     
+ 	@FindBy(xpath= "//span[@id='search-opportunities-link']")
+ 	private WebElement clickOnseachopportunities;
+ 	 	public void clickOnseachopportunities(){
+  		webElementHelper.click(clickOnseachopportunities);
+  		ThreadSleep(10000);
+  		driver.navigate().back();
+ 	 }
+ 	 @FindBy(xpath= "//div[text()='Submit']")
+ 	 	private WebElement Submit;
+ 	 	 	public void clickOnsubmit(){
+ 	  		webElementHelper.click(Submit);
+ 	 }
+ 	@FindBy(xpath= "//div[text()='View All Opportunities']")
+ 	 	 private WebElement ViewAllOpportunities;
+ 	 	 public void clickOnViewAllOpportunities(){
+ 	 	 webElementHelper.click(ViewAllOpportunities);
+ 	 	ThreadSleep(10000);
+  		driver.navigate().back();
+ 	 }
+ 	 @FindBy(xpath="//span[@class='MuiSwitch-thumb']")
+ 	 private WebElement checkMostReceint;
+ 	 public void clickOnMostReceint(){
+ 		webElementHelper.click(checkMostReceint);
+ 	 }
+ 	 @FindBy(xpath="//span[@class='MuiSwitch-thumb']")
+ 	 private WebElement checkQualified;
+ 	 public void clickOnQualified(){
+ 		webElementHelper.click(checkQualified);
+ 	 }
+ 	 
+// 	//Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='earnings-select']")));
+// 	//dropdown.selectByIndex(2);
+//// 	@FindBy(xpath="//select[@id='earnings-select']")
+//// 	private WebElement eraningValue;
+//// 	public void selectEarningValue(){
+//// 		webElementHelper.isElementDisplayed(element)
+// 	 
+// 	WebElement dropdown = driver.findElement(By.xpath("//select[@id='earnings-select']")); 
+// 		     Select earningMonth = new Select(dropdown); 
+// 		    
+// 		     System.out.println("Option is successfully selected"); 
+ 	}
+ 	

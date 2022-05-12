@@ -24,8 +24,9 @@ And check Earning Realized
 And check Suggested Hourly Rate
 And click on search for opportunites
 And click on submit button
-And check Top 3 Opportunities
 And click on view all opportunites
+And check Most Recent Opportunities
+And check Most Qualified Percentage Opportunities
 And Select Earning dropdown value "Last 3 Months"
 
 
