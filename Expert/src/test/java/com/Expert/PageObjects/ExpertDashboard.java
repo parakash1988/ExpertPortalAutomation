@@ -104,7 +104,7 @@ public class ExpertDashboard extends BasePage {
     		}
     	   
      public void checkLogTimeLink(){
- 		WebElement checkLogTime =webElementHelper.getElement(By.xpath("//*[@id='log-time-link']"));
+ 		WebElement checkLogTime =webElementHelper.getElement(By.xpath("//*[text()='Log time']"));
  		String checkLogTimeLink =checkLogTime.getText();
  		System.out.println("Actual Message:"  +checkLogTimeLink);
  		}
@@ -131,12 +131,11 @@ public class ExpertDashboard extends BasePage {
  		System.out.println("Actual Message:"  +checkSuggestedHourlyRatelabel);
  		}
      
- 	@FindBy(xpath= "//span[@id='search-opportunities-link']")
+ 	@FindBy(xpath= "//a[text()='Search for opportunities']")
  	private WebElement clickOnseachopportunities;
  	 	public void clickOnseachopportunities(){
   		webElementHelper.click(clickOnseachopportunities);
-  		ThreadSleep(10000);
-  		driver.navigate().back();
+   		driver.navigate().back();
  	 }
  	 @FindBy(xpath= "//div[text()='Submit']")
  	 	private WebElement Submit;
@@ -147,8 +146,7 @@ public class ExpertDashboard extends BasePage {
  	 	 private WebElement ViewAllOpportunities;
  	 	 public void clickOnViewAllOpportunities(){
  	 	 webElementHelper.click(ViewAllOpportunities);
- 	 	ThreadSleep(10000);
-  		driver.navigate().back();
+ 	  	driver.navigate().back();
  	 }
  	 @FindBy(xpath="//span[@class='MuiSwitch-thumb']")
  	 private WebElement checkMostReceint;
@@ -161,7 +159,7 @@ public class ExpertDashboard extends BasePage {
  		webElementHelper.click(checkQualified);
  	 }
  	 
-// 	//Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='earnings-select']")));
+Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='earnings-select']")));
 // 	//dropdown.selectByIndex(2);
 //// 	@FindBy(xpath="//select[@id='earnings-select']")
 //// 	private WebElement eraningValue;
