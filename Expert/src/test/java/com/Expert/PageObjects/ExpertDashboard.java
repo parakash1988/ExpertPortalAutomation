@@ -4,6 +4,7 @@ package com.Expert.PageObjects;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,18 +36,15 @@ public class ExpertDashboard extends BasePage {
 		PageFactory.initElements(driver, this);
 
 	}
-
 	public void clickOnDashboard(){
-		ThreadSleep(200);	
+		ThreadSleep(1000);	
 		WebElement dashboard = webElementHelper.getElement(By.xpath("(//span[text()='Dashboard'])[2]"));
 		Actions action = new Actions(driver);
-		ThreadSleep(200);
+		ThreadSleep(1000);
 		action.moveToElement(dashboard);
         action.click(dashboard);
         
 	}
-	
-	
 	public void userVerifyDashboardText(){
 		WebElement message =webElementHelper.getElement(By.xpath("//div[text()='Snapshot Metrics']"));
 		ThreadSleep(200);
@@ -55,7 +53,6 @@ public class ExpertDashboard extends BasePage {
 		String expectedMessage = "Snapshot Metrics"; 
 		Assert.assertEquals(actualMessage, expectedMessage);
 	}
-
 	public boolean userVerifyDateTimeOnDashboard(){
 		WebElement message =webElementHelper.getElement(By.xpath("//div[text()='Dashboard Data Last Updated at ']"));
 		ThreadSleep(200);
@@ -63,29 +60,21 @@ public class ExpertDashboard extends BasePage {
 		System.out.println("Actual Message:"  +actualMessage);
 		driver.quit();
 		return false;
-	
 	}
-	
 	@FindBy(xpath= "//a[@href='https://paro.io/refer-business/']")
-
 	private WebElement referbussiness;
-	
 	public void clickOnReferbussiness(){
 				ThreadSleep(1000);
 		webElementHelper.click(referbussiness);
 		driver.quit();
-	
 	}
-
 	public void checkMonthlyHourslabel(){
-		
 		WebElement MonthlyHourslabel =webElementHelper.getElement(By.xpath("//span[text()='Monthly Hours Logged']"));
 		ThreadSleep(200);
 		String actualMessage =MonthlyHourslabel.getText();
 		System.out.println("Actual Message:"  +actualMessage);
 		String expectedMessage = "Monthly Hours Logged"; 
 		Assert.assertEquals(actualMessage, expectedMessage);
-		
 	}
 	public void checklogtime(){
 	WebElement logtime =webElementHelper.getElement(By.xpath("(//div[@class='pt-4 px-3 text-center'])[1]"));
@@ -93,28 +82,40 @@ public class ExpertDashboard extends BasePage {
 	System.out.println("Actual Message:"  +actuallogtime);
 	}
      public void quitbrowser(){
-    	 
     	 driver.quit();
      }
-
      public void checkAvailableTime(){
     		WebElement AvailableTime =webElementHelper.getElement(By.xpath("(//div[@class='pt-4 px-3 text-center'])[1]"));
     		String actualAvailableltime =AvailableTime.getText();
     		System.out.println("Actual Message:"  +actualAvailableltime);
-    		}
-    	   
-     public void checkLogTimeLink(){
+    	}
+       public void checkLogTimeLink(){
  		WebElement checkLogTime =webElementHelper.getElement(By.xpath("//*[text()='Log time']"));
  		String checkLogTimeLink =checkLogTime.getText();
  		System.out.println("Actual Message:"  +checkLogTimeLink);
- 		}
-     
+  		}
+       @FindBy(xpath="//*[text()='Log time']")
+       private WebElement OnLogtime;
+       
+       public void clickOnLogtime(){
+    		webElementHelper.click(OnLogtime);
+    		ThreadSleep(1000);
+         //	driver.navigate().back();
+         //	ThreadSleep(1000);
+         //	driver.navigate().back();
+    	 }
+       
      public void checkUpdateavailability(){
   		WebElement checkUpdateavailability =webElementHelper.getElement(By.xpath("//*[text()='Update availability']"));
   		String checkLogTimeLink =checkUpdateavailability.getText();
   		System.out.println("Actual Message:"  +checkLogTimeLink);
   		}
+     @FindBy(xpath="//*[text()='Update availability']")
+     private WebElement OnUpdateavailability;
      
+     public void clickOnUpdateavailability(){
+  		webElementHelper.click(OnUpdateavailability);
+  	 }
      public void checkWinRate(){
    		WebElement checkWinRate =webElementHelper.getElement(By.xpath("//*[text()='Win Rate']"));
    		String checkWinRateLable =checkWinRate.getText();
@@ -135,7 +136,9 @@ public class ExpertDashboard extends BasePage {
  	private WebElement clickOnseachopportunities;
  	 	public void clickOnseachopportunities(){
   		webElementHelper.click(clickOnseachopportunities);
+  		ThreadSleep(1000);
    		driver.navigate().back();
+   		
  	 }
  	 @FindBy(xpath= "//div[text()='Submit']")
  	 	private WebElement Submit;
@@ -146,9 +149,10 @@ public class ExpertDashboard extends BasePage {
  	 	 private WebElement ViewAllOpportunities;
  	 	 public void clickOnViewAllOpportunities(){
  	 	 webElementHelper.click(ViewAllOpportunities);
+ 	 	ThreadSleep(1000);
  	  	driver.navigate().back();
  	 }
- 	 @FindBy(xpath="//span[@class='MuiSwitch-thumb']")
+ 	 @FindBy(xpath="//span[@class='MuiButtonBase-root MuiIconButton-root jss170 MuiSwitch-switchBase jss171 Mui-checked']")
  	 private WebElement checkMostReceint;
  	 public void clickOnMostReceint(){
  		webElementHelper.click(checkMostReceint);
@@ -159,16 +163,22 @@ public class ExpertDashboard extends BasePage {
  		webElementHelper.click(checkQualified);
  	 }
  	 
-Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='earnings-select']")));
-// 	//dropdown.selectByIndex(2);
-//// 	@FindBy(xpath="//select[@id='earnings-select']")
-//// 	private WebElement eraningValue;
-//// 	public void selectEarningValue(){
-//// 		webElementHelper.isElementDisplayed(element)
-// 	 
-// 	WebElement dropdown = driver.findElement(By.xpath("//select[@id='earnings-select']")); 
-// 		     Select earningMonth = new Select(dropdown); 
-// 		    
-// 		     System.out.println("Option is successfully selected"); 
+ 	 @FindBy(xpath ="//select[@id='earnings-select']")
+ 	 private WebElement earningDurationSelect;
+ 	 
+ 	 public void selectearningDurationSelect(String text){
+ 		webElementHelper.click(earningDurationSelect);
+ 		Select s = new Select(earningDurationSelect);
+ 		s.selectByVisibleText(text);
+ 		webElementHelper.click(earningDurationSelect);
+ 		JavascriptExecutor js = (JavascriptExecutor) driver;
+ 		js.executeScript("window.scrollBy(0,150)", "");
+ 	 }
+ 	 	 
+ 	 public void clickOnDashboardIcon(){
+ 		
+ 		driver.get("https://expert.parodev.io/dashboards");
+ 	 }
+ 	
  	}
  	

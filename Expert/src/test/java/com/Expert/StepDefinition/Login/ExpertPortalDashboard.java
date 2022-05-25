@@ -84,11 +84,22 @@ private ExpertPortalPage expertloginPage;
 	@Given("^check logtime link$")
 	public void checklogtimelink(){
 		expertportaldashboard.checkLogTimeLink();
+		
+	}
+	@Given("^click on logtime link$")
+	public void clicklogtimelink(){
+		expertportaldashboard.clickOnLogtime();
+		//expertportaldashboard.clickOnDashboard();
 	}
 
 	@Given("^check update availability$")
 	public void checkupdateavailability(){
 		expertportaldashboard.checkUpdateavailability();
+	}
+	@Given("^click on update availability$")
+	public void clickupdateavailability(){
+		expertportaldashboard.clickOnUpdateavailability();
+		//expertportaldashboard.clickOnDashboard();
 	}
 
 	@Given("^check winrate label$")
@@ -109,6 +120,7 @@ private ExpertPortalPage expertloginPage;
 	@Given("^click on search for opportunites$")
 	public void clickonsearchforopportunites(){
 		expertportaldashboard.clickOnseachopportunities();
+		//expertportaldashboard.clickOnDashboard();
 		
 	}
 
@@ -130,9 +142,15 @@ private ExpertPortalPage expertloginPage;
 	public void checkMostQualifiedOpportunities(){
 		expertportaldashboard.clickOnQualified();
 	}
+	@Given("^click on DashboardIcon$")
+	public void OnDashboardIcon(){
+		expertportaldashboard.clickOnDashboardIcon();
+	}
+
 
 	@Given("^Select Earning dropdown value \"([^\"]*)\"$")
-	public void selectEarningdropdownvalue(String arg1) {
-	   
+	public void selectEarningdropdownvalue(String text) {
+		expertportaldashboard.selectearningDurationSelect(text);
+		userlogin.quitbrowser();
 	}
 }

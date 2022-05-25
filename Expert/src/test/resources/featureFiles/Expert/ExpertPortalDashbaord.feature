@@ -18,7 +18,13 @@ And Monthly Hours Logged label
 And check logged time 
 And check Available time
 And check logtime link
+And click on logtime link
+And I have enter UserName "annonbill@gmail.com"
+And I have enter Password "Password1!"
+And I have click on Sign in button
+And click on DashboardIcon
 And check update availability
+And click on DashboardIcon
 And check winrate label
 And check Earning Realized
 And check Suggested Hourly Rate
@@ -27,8 +33,7 @@ And click on submit button
 And click on view all opportunites
 And check Most Recent Opportunities
 And check Most Qualified Percentage Opportunities
-And Select Earning dropdown value "Last 3 Months"
-
+And Select Earning dropdown value "Last 6 Months"
 
 
 
